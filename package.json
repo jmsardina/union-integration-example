@@ -1,0 +1,26 @@
+{
+  "name": "union-registry",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "author": "Jennifer Sardina",
+  "license": "ISC",
+  "dependencies": {
+    "@xo-union/tk-component-buttons": "^7.0.2",
+    "@xo-union/tk-css-breakpoints": "^1.0.7",
+    "@xo-union/tk-css-typography": "^4.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "a-css-loader": "^1.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.7.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^3.11.0"
+  }
+}

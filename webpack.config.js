@@ -26,11 +26,7 @@ module.exports = {
        })
        ```
        */
-      amd: 'tk-union',
-      /*
-       * This is to support older versions of node, but is not necessary for our POC
-       */
-      commonjs: 'tk-union'
+      amd: 'tk-union'
     },
     /*
      * This option is necessary to automatically define the modules in AMD
@@ -47,17 +43,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        // Project Union css module config:
-        // issuer must be specified when using the ExtractTextWebpackPlugin
-        issuer: /\.js$/,
-        // react-dates package is not compatible with this rule, so exclude it
-        exclude: /react-dates/,
-        test: /\.cssm?$/,
-        // Tell ExtractTextWebpackPlugin to extract css contents from Union css modules
-        // ExtractTextWebpackPlugin always needs a `use` option
-        use: ExtractTextWebpackPlugin.extract({ use: [] })
-      },
       {
         test: /\.scss$/,
         use: ExtractTextWebpackPlugin.extract({

@@ -5,6 +5,18 @@
     <div id="root"></div>
 
     <script src="./dist/tk-union.js"></script>
+    <script>
+      require(['tk-union'], ({ React, ReactDOM, ...union}) => {
+        ReactDOM.render(
+          React.createElement(
+            union.Button, {
+              children: 'Click Me!',
+              onClick: () => { console.log("Ive been clicked!"); }
+            }
+          ), document.getElementById('root')
+        );
+      });
+    </script>
     <link rel="stylesheet" type="text/css" href="./dist/tk-union.css">
   </body>
 </html>

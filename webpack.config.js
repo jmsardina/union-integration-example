@@ -1,5 +1,7 @@
 const path = require('path');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+const { EnvironmentPlugin } = require('webpack');
+
 
 module.exports = {
   entry: './src/index.js',
@@ -79,5 +81,8 @@ module.exports = {
       filename: 'tk-union.css',
       ignoreOrder: true
     }),
+    new EnvironmentPlugin({
+      UNION_ASSETS_ENV: 'qa'
+    })
   ],
 }

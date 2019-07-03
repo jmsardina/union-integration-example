@@ -11,6 +11,7 @@
   "dependencies": {
     "@xo-union/tk-component-buttons": "^7.0.2",
     "@xo-union/tk-css-breakpoints": "^1.0.7",
+    "@xo-union/tk-css-essentials": "^2.0.6",
     "@xo-union/tk-css-typography": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
